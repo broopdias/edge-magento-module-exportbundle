@@ -1,0 +1,42 @@
+<script type="text/javascript">
+	function importAction()
+	{
+		var file = $('fileimport').value;
+		if (file == '') {
+			alert('Please choose file import.');
+			return false;
+		}
+		$('import_form').submit();
+	}
+</script>
+
+<div class="imporproductbackend">
+    <div class="entry-edit">
+        <form id="import_form" name="edit_form" method="post" action="<?php echo $this->getUrl('*/*/import')?>" enctype="multipart/form-data" >
+            <div class="content-header">
+                <table cellspacing="0" class="grid-header">
+                    <tr>
+                        <td><h3><?php echo $this->__('Import Bundle Products')?></h3></td>
+                        <td class="a-right">
+                            <button onclick="importAction()" class="scalable save" type="button">
+                                <span><?php echo $this->__('Import') ?></span>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+            <h4 class="icon-head head-edit-form fieldset-legend"><?php echo $this->__('Import bundle product form csv')?></h4>
+            <fieldset id="my-fieldset">
+                <table cellspacing="0" class="form-list">
+                    <tr>
+                        <td class="label"><?php echo $this->__('Import file')?> </td>
+                        <td class="input-ele">
+                            <input type="file" name="fileimport" id="fileimport" class="" title="Select File to Import"/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</div>

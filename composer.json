@@ -1,0 +1,23 @@
+{
+    "name": "outeredge/edge-magento-module-exportbundle",
+    "type": "magento-module",
+    "description": "Exporting Bundle Products - Magento 1.9 by outer/edge",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "outer/edge",
+            "email": "bruno@outeredgeuk.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            ["app/code/local/Edge/ExportBundle", "app/code/local/Edge/ExportBundle"],
+            ["app/etc/modules/Edge_ExportBundle.xml", "app/etc/modules/Edge_ExportBundle.xml"],
+            ["app/design/adminhtml/default/default/layout/edge/productbundle.xml", "app/design/adminhtml/default/default/layout/edge/productbundle.xml"],
+            ["app/design/adminhtml/default/default/template/edge/productbundle/productbundlebackend.phtml", "app/design/adminhtml/default/default/template/edge/productbundle/productbundlebackend.phtml"]
+        ]
+    }
+}
