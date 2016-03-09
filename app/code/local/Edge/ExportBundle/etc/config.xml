@@ -17,19 +17,6 @@
         </routers>
     </admin>
     <adminhtml>
-        <menu>
-            <productbundle module="productbundle">
-                <title>Product Bundle</title>
-                <sort_order>71</sort_order>
-                <children>
-                    <export module="productbundle">
-                        <title>Export to CSV</title>
-                        <sort_order>0</sort_order>
-                        <action>productbundle/adminhtml_productbundle/export</action>
-                    </export>
-                </children>
-            </productbundle>
-        </menu>
         <acl>
             <resources>
                 <all>
@@ -45,13 +32,6 @@
                 </admin>
             </resources>
         </acl>
-        <layout>
-            <updates>
-                <productbundle>
-                    <file>productbundle.xml</file>
-                </productbundle>
-            </updates>
-        </layout>
     </adminhtml>
     <global>
         <helpers>
