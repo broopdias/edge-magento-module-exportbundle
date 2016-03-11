@@ -67,7 +67,7 @@ class Edge_ExportBundle_Adminhtml_ProductbundleController extends Mage_Adminhtml
                     if (count($selectionCollection)) {
                         $bundled_items = array();
                         foreach ($selectionCollection as $option) {
-                            $bundled_items[] = $option->sku;
+                            $bundled_items[] = $option->sku . ':'. ($option->selection_qty * 1);
                         }
                     }
                     $bundle_sku_simples = implode(' - ',$bundled_items);
