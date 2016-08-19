@@ -7,13 +7,13 @@
     </modules>
     <admin>
         <routers>
-            <productbundle>
-                <use>admin</use>
+            <adminhtml>
                 <args>
-                    <module>Edge_ExportBundle</module>
-                    <frontName>productbundle</frontName>
+                    <modules>
+                        <Edge_ExportBundle after="Mage_Adminhtml">Edge_ExportBundle_Adminhtml</Edge_ExportBundle>
+                    </modules>
                 </args>
-            </productbundle>
+            </adminhtml>
         </routers>
     </admin>
     <adminhtml>

@@ -6,7 +6,7 @@
                 <pricingimport module="productbundle">
                     <sort_order>1000</sort_order>
                     <title>Export Bundle to CSV</title>
-                    <action>productbundle/adminhtml_productbundle/export</action>
+                    <action>adminhtml/productbundle/export</action>
                 </pricingimport>
             </children>
         </catalog>
